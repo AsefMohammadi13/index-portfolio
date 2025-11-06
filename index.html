@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <!-- Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- 1. Header/Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-p fixed-top">
+            <div class="container">
+                <div class="navbar-brand text-light" href="#hero">Asef Mohammadi</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <!-- Navigationsmenü  -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Über mich </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projekte </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontakt </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 2. Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Erste Vorstellung / Hero-Bereich -->
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hallo, ich bin Asef – Webentwickler</h1>
+                <p>
+                    Ich entwickle moderne, benutzerfreundliche Websites mit HTML, CSS und JavaScript.
+                </p>
+                <a href="#projects" class="hero-btn">Projekte ansehen</a>
+            </div>
+        </div>
+    </section>
+    <!-- 3. About Section -->
+    <section id="about">
+        <div class="container text-center">
+            <div class="section-title">
+                <h2>Über mich</h2>
+            </div>
+            <div class="about-content row">
+                <div class="image col-lg-6 col-sm-12 col-xs-12">
+                    <img src="./images/Profile image.JPEG" alt="profile photo" />
+                </div>
+                <div class="about-text col-lg-6 col-sm-12 col-xs-12">
+                    <p>Ich bin Frontend-Entwickler mit Interesse an modernen und benutzerfreundlichen Webseiten. Ich
+                        erstelle responsive Websites, die funktional und optisch ansprechend sind.</p>
+
+                    <p>Ich lerne kontinuierlich neue Technologien, um meine Fähigkeiten zu verbessern. Mein Ziel ist
+                        es, spannende Projekte umzusetzen und in einem professionellen Team mitzuwirken.</p>
+                </div>
+            </div>
+            <!-- skills -->
+            <div class="skills-gride">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript </h3>
+                    <p>(Basis Kenntnisse)</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <!-- Projekte / Arbeitsproben -->
+            <div class="section-title">
+                <h2>Meine Projekte</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="projects-item">
+                    <a href="https://asefmohammadi13.github.io/index-shop/">
+                        <img src="./images/kopfhörer-shop.png" alt="" />
+                        <h3>Kopfhörer-Shop</h3>
+                        <p>
+                            Ein moderner, responsiver Online-Shop mit Warenkorb.
+                        </p>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Resume/Skills Section -->
+    <section id="resume">
+        <!-- Lebenslauf und Fähigkeiten -->
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact">
+        <!-- Kontaktinformationen -->
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontakt</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <p class="first-par">Ich bin motiviert, Neues zu lernen und praktische Erfahrungen zu sammeln.</p>
+                    <p>
+                        Für eine Lehrstelle oder ein Praktikum freue ich mich über Ihre Kontaktaufnahme.
+                    </p>
+                    <a href="mailto:mo.asef.mohammadi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/asef-mohammadi-31801638b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AsefMohammadi13"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer>
+        <!-- Fußzeile -->
+        <p>&copy Asef Mohammadi. Alle Rechte vorbehalten.</p>
+    </footer>
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
