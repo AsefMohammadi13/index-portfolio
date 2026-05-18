@@ -2,31 +2,21 @@
 .navbar {
   background-color: #0d6efd;
 }
+
 /* Hero */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
   min-height: 100vh;
+  padding: 100px 0 60px;
 }
 .hero-img img {
-  width: 370px;
-  height: 370px;
+  width: 100%;
+  max-width: 370px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-}
-@media (max-width: 992px) {
-  .hero-img img {
-    width: 280px;
-    height: 280px;
-  }
-}
-@media (max-width: 768px) {
-  .hero-img img {
-    width: 260px;
-    height: 260px;
-  }
 }
 .hero-text {
   margin-top: 30px;
@@ -41,11 +31,39 @@
 }
 .btn {
   background-color: #0a58ca;
-  padding: 20px;
+  padding: 12px 30px;
   border-radius: 50px;
 }
 .btn:hover {
   background-color: #084298;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .hero-text h3 {
+    font-size: 1.8rem;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .btn {
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+  .hero-img img {
+    max-width: 300px;
+  }
+  .hero-text {
+    margin-top: 10px;
+  }
 }
 
 /* Headings */
@@ -62,9 +80,10 @@
   padding: 40px 0;
   text-align: center;
 }
+
 /* Skills */
 .skill-section {
-  min-height: 60vh;
+  padding: 80px 0;
   background-color: #f8f9fa;
 }
 .skill-items-container {
@@ -84,14 +103,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-@media (max-width: 768px) {
-  .skill-items-container {
-    gap: 20px;
-  }
-}
 .skill-item i {
   font-size: 3rem;
-  transition: 0.3s;
 }
 .skill-items-container .skill-item p {
   font-size: 14px;
@@ -101,17 +114,109 @@
 .js-skill {
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .skill-items-container {
+    gap: 20px;
+  }
+  .skill-item {
+    width: 100px;
+    height: 100px;
+  }
+  .skill-item i {
+    font-size: 2.2rem;
+  }
+}
+
 /* Erfahrung & Ausbildung */
 .erfahrung-section {
   background-color: #fff;
   padding: 80px 0;
 }
-
 .timeline-item {
   background: white;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-left: 5px solid #0d6efd;
+}
+@media (max-width: 768px) {
+  .timeline-item {
+    padding: 15px;
+  }
+}
+
+/* Projekte */
+.projekte-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.projects-container .card {
+  width: 20rem;
+  height: 450px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .skill-items-container {
+    gap: 20px;
+  }
+}
+.projects-container .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.projects-container .btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  margin-top: auto;
+}
+/* Kontakt */
+.kontakt-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+.kontakt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.kontakt-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+.kontakt-item i {
+  font-size: 1.4rem;
+  color: black;
+}
+.kontakt-item a i {
+  font-size: 1.8rem;
+  color: black;
+  transition: 0.3s;
+}
+.kontakt-item a i:hover {
+  color: #0d6efd;
+}
+.kontakt-item p {
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #0d6efd;
+  padding: 20px 0;
 }
