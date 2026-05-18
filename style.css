@@ -1,7 +1,9 @@
-/* Navbar Section*/
+/* Navbar */
 .navbar {
   background-color: #0d6efd;
 }
+
+/* Hero */
 .hero {
   display: flex;
   align-items: center;
@@ -13,9 +15,28 @@
   object-fit: cover;
   border-radius: 50%;
 }
-/* Hero section */
+@media (max-width: 992px) {
+  .hero-img img {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-img img {
+    width: 260px;
+    height: 260px;
+  }
+}
 .hero-text {
   margin-top: 30px;
+}
+.social-links {
+  margin-top: 10px;
+}
+.social-links a i {
+  color: black;
+  font-size: 25px;
+  margin: 4px;
 }
 .btn {
   background-color: #0a58ca;
@@ -25,13 +46,50 @@
 .btn:hover {
   background-color: #084298;
 }
-/* headings */
+
+/* Headings */
+.skill-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 0;
+}
 .headings {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px;
 }
 /* Skills */
-/* Erfahrung & Ausbildung */
-/* Meine Projekte */
-/* Kontakt */
+.skill-section {
+  height: 60vh;
+  background-color: aquamarine;
+}
+.skill-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 60px 0;
+}
+.skill-item {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+}
+.skill-item i {
+  font-size: 3rem;
+}
+.skill-items-container .skill-item p {
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+.js-skill {
+  flex-direction: column;
+}
