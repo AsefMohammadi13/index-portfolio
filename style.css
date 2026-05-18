@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px;
+  min-height: 100vh;
 }
 .hero-img img {
   width: 370px;
@@ -58,12 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 40px 0;
+  text-align: center;
 }
 /* Skills */
 .skill-section {
-  height: 60vh;
-  background-color: aquamarine;
+  min-height: 60vh;
+  background-color: #f8f9fa;
 }
 .skill-items-container {
   display: flex;
@@ -79,11 +82,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .skill-items-container {
+    gap: 20px;
+  }
 }
 .skill-item i {
   font-size: 3rem;
+  transition: 0.3s;
 }
 .skill-items-container .skill-item p {
   font-size: 14px;
@@ -92,4 +101,18 @@
 }
 .js-skill {
   flex-direction: column;
+}
+/* Erfahrung & Ausbildung */
+.erfahrung-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.timeline-item {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 5px solid #0d6efd;
 }
